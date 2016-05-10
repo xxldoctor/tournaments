@@ -81,4 +81,4 @@ for i in part:
 	if set(part[i]).issubset(people):
 		posgames.add(i)
 for i in posgames:
-	print(part[i])
+	print(i, part[i])
