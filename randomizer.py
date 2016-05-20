@@ -58,8 +58,6 @@ seating = {1: [0, 1, 2, 3],
 		   20: [3, 4, 10, 13]}
 
 players1 = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P']
-# players2 = ['K', 'G', 'D', 'N', 'E', 'P', 'I', 'M', 'C', 'A', 'J', 'F', 'B', 'O', 'L', 'H']
-# players3 = ['C', 'K', 'D', 'N', 'E', 'O', 'L', 'F', 'M', 'B', 'H', 'I', 'J', 'G', 'P', 'A']
 games1 = {}
 games2 = {}
 games3 = {}
@@ -76,10 +74,10 @@ gameslist(part2, games2)
 players3 = list(players1)
 fails1 = {3: 0, 4: 1}
 fails2 = {3: 0, 4: 1}
-while (fails1[3] > 0) or (fails1[4] > 0) or (fails2[3] > 4) or (fails2[4] > 0):
+while (fails1[3] > 0) or (fails1[4] > 0): #or (fails2[3] > 14) or (fails2[4] > 0):
 	part3 = generateplayers(players3)
 	fails1 = fucksgiven(part1, part3)
-	fails2 = fucksgiven(part2, part3)
+	#fails2 = fucksgiven(part2, part3)
 gameslist(part3, games3)
 
 print(players1)
