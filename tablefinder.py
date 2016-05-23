@@ -76,5 +76,6 @@ for i in part:
 for i in posgames:
 	print(i, part[i])
 
+people.difference_update(players)
 print('нужные игроки: ' + str(players))
-print('могут не идти: ' + str(people.difference_update(players)))
+print('могут не идти: ' + str(people))
