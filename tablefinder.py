@@ -68,8 +68,13 @@ part = {1: ['Андрей', 'Юл', 'Зайчик', 'Сергей'],
         60: ['Юл', 'Андрей', 'Дима', 'Влад']}
 
 posgames = set()
+players = set()
 for i in part:
 	if set(part[i]).issubset(people):
 		posgames.add(i)
+		players.update(part[i])
 for i in posgames:
 	print(i, part[i])
+
+print('нужные игроки: ' + str(players))
+print('могут не идти: ' + str(people.difference_update(players)))
