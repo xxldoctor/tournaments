@@ -4,12 +4,10 @@ x = 0
 for i1 in range(len(players)-3):
 	for i2 in range(i1 + 1, len(players)-2):
 		for i3 in range(i2 + 1, len(players) - 1):
-			for i4 in range(i3 +  1, len(players)):
+			for i4 in range(i3 + 1, len(players)):
 				x += 1
 				games[x] = [players[i1], players[i2], players[i3], players[i4]]
-				# print(x, games[x])
 
-# print(games)
 
 def crossnumbers(list1, list2):
 	result = 0
