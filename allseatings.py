@@ -18,6 +18,7 @@ def partmaker(games):
 	gamescleaner(games, gamestodelete)
 	return part
 
+
 def gamescleaner(games, deletelist):
 	for i in deletelist:
 		games.pop(i)
